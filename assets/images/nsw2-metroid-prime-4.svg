@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="bgBackdrop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="coverGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#311042"/>
+      <stop offset="100%" stop-color="#09090B"/>
+    </linearGradient>
+    <filter id="cardDrop" x="-15%" y="-15%" width="135%" height="135%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="600" height="450" fill="url(#bgBackdrop)"/>
+  <ellipse cx="300" cy="414" rx="210" ry="16" fill="#CBD5E1" opacity="0.7"/>
+  <g filter="url(#cardDrop)">
+    
+    <!-- Switch 2 Red Express Game Card Right -->
+    <g transform="translate(376, 248)">
+      <rect x="0" y="0" width="96" height="126" rx="10" fill="#BE123C" stroke="#FDA4AF" stroke-width="2.5"/>
+      <rect x="10" y="12" width="76" height="88" rx="5" fill="#18181B"/>
+      <text x="48" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#FB7185">SWITCH 2</text>
+      <text x="48" y="56" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">GAME CARD</text>
+      <rect x="18" y="70" width="60" height="18" rx="3" fill="#C8102E"/>
+      <text x="48" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" font-weight="800" fill="#FFFFFF">REG ASIA/USA</text>
+      <polygon points="48,110 55,119 41,119" fill="#FDE047"/>
+    </g>
+    <!-- Switch 2 Full Red Case -->
+    <g transform="translate(132, 38)">
+      <rect x="0" y="0" width="224" height="374" rx="12" fill="#B91C1C"/>
+      <rect x="7" y="7" width="210" height="360" rx="7" fill="url(#coverGrad)"/>
+      <path d="M7 14 Q7 7 14 7 L210 7 Q217 7 217 14 L217 54 L7 54 Z" fill="#DC2626"/>
+      <text x="20" y="37" font-family="system-ui, sans-serif" font-size="15" font-weight="900" fill="#FFFFFF" letter-spacing="0.6">NINTENDO SWITCH 2</text>
+      
+      <circle cx="112" cy="150" r="44" fill="none" stroke="#A855F7" stroke-width="5"/>
+      <path d="M88 182 L116 108 L108 146 L136 146 L104 196 L112 158 Z" fill="#E879F9"/>
+      <rect x="7" y="270" width="210" height="97" fill="#09090B" opacity="0.88"/>
+      <text x="20" y="300" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">METROID PRIME 4</text>
+      <text x="20" y="321" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#FECDD3">Beyond · Switch 2 Ed.</text>
+      <text x="20" y="348" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#C084FC">REG ASIA/USA · SEGEL BARU</text>
+    </g>
+  </g>
+</svg>

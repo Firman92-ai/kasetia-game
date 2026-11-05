@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" role="img" aria-label="Ilustrasi fisik game">
+  <rect width="600" height="450" fill="#E2E8F0"/>
+  <rect x="190" y="65" width="220" height="320" rx="14" fill="#FFFFFF" stroke="#94A3B8" stroke-width="3"/>
+  <circle cx="300" cy="205" r="54" fill="#CBD5E1"/>
+  <circle cx="300" cy="205" r="16" fill="#FFFFFF"/>
+  <text x="300" y="315" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#1E293B">Media Fisik Konsol</text>
+  <text x="300" y="342" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#475569">Kasetia Game</text>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" width="720" height="540" role="img" aria-label="Koleksi Fisik PS5 Disc, Switch 1 Cartridge, dan Switch 2 Cartridge">
+  <defs>
+    <linearGradient id="studioBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="55%" stop-color="#E8EEF6"/>
+      <stop offset="100%" stop-color="#DCE5F2"/>
+    </linearGradient>
+    <linearGradient id="ps5Blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0055C4"/>
+      <stop offset="100%" stop-color="#003078"/>
+    </linearGradient>
+    <linearGradient id="discHolo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="30%" stop-color="#93C5FD"/>
+      <stop offset="55%" stop-color="#F8FAFC"/>
+      <stop offset="80%" stop-color="#A5B4FC"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="sw1Red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E60012"/>
+      <stop offset="100%" stop-color="#B8000E"/>
+    </linearGradient>
+    <linearGradient id="sw2Crimson" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D90429"/>
+      <stop offset="100%" stop-color="#8D0801"/>
+    </linearGradient>
+    <filter id="softDrop" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="720" height="540" fill="url(#studioBg)"/>
+  <ellipse cx="360" cy="456" rx="290" ry="26" fill="#CBD5E1" opacity="0.65"/>
+  <rect x="44" y="438" width="632" height="10" rx="5" fill="#FFFFFF" opacity="0.85"/>
+
+  <!-- 1. PS5 Blu-ray Case + Optical Disc (Left) -->
+  <g transform="translate(68, 96)" filter="url(#softDrop)">
+    <!-- Peeking Blu-ray Disc -->
+    <circle cx="156" cy="172" r="78" fill="url(#discHolo)" stroke="#94A3B8" stroke-width="2"/>
+    <circle cx="156" cy="172" r="24" fill="#F1F5F9" stroke="#64748B" stroke-width="2"/>
+    <circle cx="156" cy="172" r="9" fill="#E2E8F0"/>
+    <path d="M156 94 A78 78 0 0 1 224 134 L177 160 A24 24 0 0 0 156 148 Z" fill="#FFFFFF" opacity="0.45"/>
+
+    <!-- Translucent Blue Keep Case -->
+    <rect x="0" y="18" width="166" height="304" rx="10" fill="url(#ps5Blue)"/>
+    <rect x="6" y="24" width="152" height="292" rx="6" fill="#0F172A"/>
+    <!-- White PS5 Header Strip -->
+    <path d="M6 30 Q6 24 12 24 L152 24 Q158 24 158 30 L158 58 L6 58 Z" fill="#FFFFFF"/>
+    <text x="18" y="46" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#0F172A" letter-spacing="1">PS5</text>
+    <text x="148" y="45" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#00439C">ULTRA HD BLU-RAY</text>
+    <!-- Cover Graphic -->
+    <rect x="6" y="58" width="152" height="258" fill="#1E293B"/>
+    <circle cx="82" cy="162" r="46" fill="#1D4ED8" opacity="0.35"/>
+    <circle cx="82" cy="162" r="28" fill="#60A5FA" opacity="0.85"/>
+    <rect x="26" y="232" width="112" height="8" rx="4" fill="#F8FAFC" opacity="0.9"/>
+    <rect x="42" y="248" width="80" height="6" rx="3" fill="#94A3B8"/>
+    <rect x="16" y="284" width="38" height="18" rx="3" fill="#FFFFFF"/>
+    <text x="35" y="297" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="800" fill="#0F172A">REG 3</text>
+  </g>
+
+  <!-- 2. Nintendo Switch 1 Case + Dark Cartridge (Center) -->
+  <g transform="translate(284, 78)" filter="url(#softDrop)">
+    <rect x="0" y="0" width="156" height="328" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="6" y="6" width="144" height="316" rx="6" fill="#0F172A"/>
+    <!-- Red Corner Badge -->
+    <path d="M6 12 Q6 6 12 6 L54 6 L54 48 L6 48 Z" fill="url(#sw1Red)"/>
+    <rect x="18" y="15" width="11" height="22" rx="4" fill="#FFFFFF"/>
+    <rect x="32" y="15" width="11" height="22" rx="4" fill="#FFFFFF"/>
+    <!-- Cover Graphic -->
+    <linearGradient id="sw1Art" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <rect x="6" y="48" width="144" height="274" fill="url(#sw1Art)"/>
+    <polygon points="78,102 118,176 38,176" fill="#FACC15" opacity="0.9"/>
+    <rect x="26" y="204" width="104" height="8" rx="4" fill="#FFFFFF"/>
+    <rect x="40" y="220" width="76" height="6" rx="3" fill="#CBD5E1"/>
+
+    <!-- Switch 1 Dark Charcoal Game Card Foreground -->
+    <g transform="translate(98, 246)">
+      <rect x="0" y="0" width="74" height="96" rx="8" fill="#1E293B" stroke="#475569" stroke-width="2"/>
+      <rect x="8" y="10" width="58" height="68" rx="4" fill="#E60012"/>
+      <text x="37" y="34" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF">SWITCH 1</text>
+      <text x="37" y="48" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#FEE2E2">GAME CARD</text>
+      <polygon points="37,84 43,91 31,91" fill="#94A3B8"/>
+    </g>
+  </g>
+
+  <!-- 3. Nintendo Switch 2 Full Red Case + Red Express Card (Right) -->
+  <g transform="translate(486, 96)" filter="url(#softDrop)">
+    <rect x="0" y="12" width="160" height="312" rx="10" fill="url(#sw2Crimson)"/>
+    <!-- Full Top Crimson Header -->
+    <path d="M4 20 Q4 16 8 16 L152 16 Q156 16 156 20 L156 56 L4 56 Z" fill="#C8102E"/>
+    <text x="16" y="41" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">SWITCH 2</text>
+    <rect x="114" y="25" width="30" height="22" rx="5" fill="#FFFFFF"/>
+    <text x="129" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="900" fill="#C8102E">2</text>
+    <!-- Cover Graphic -->
+    <rect x="6" y="56" width="148" height="262" rx="4" fill="#18181B"/>
+    <circle cx="80" cy="154" r="46" fill="#E11D48" opacity="0.28"/>
+    <path d="M44 172 L80 112 L116 172 Z" fill="#FB7185"/>
+    <rect x="26" y="218" width="108" height="8" rx="4" fill="#FFFFFF"/>
+    <rect x="38" y="234" width="84" height="6" rx="3" fill="#FDA4AF"/>
+
+    <!-- Switch 2 Red High-Speed Cartridge Foreground -->
+    <g transform="translate(-26, 232)">
+      <rect x="0" y="0" width="76" height="98" rx="8" fill="#BE123C" stroke="#FDA4AF" stroke-width="2"/>
+      <rect x="8" y="10" width="60" height="70" rx="4" fill="#18181B"/>
+      <text x="38" y="34" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="800" fill="#FB7185">SWITCH 2</text>
+      <text x="38" y="48" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" font-weight="700" fill="#FFFFFF">EXPRESS</text>
+      <polygon points="38,86 44,93 32,93" fill="#FDE047"/>
+    </g>
+  </g>
+
+  <!-- Subtle Bottom Caption -->
+  <text x="360" y="506" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#334155">
+    Blu-ray Disc PS5 · Game Card Switch 1 · Express Game Card Switch 2
+  </text>
+</svg>
