@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psyger Zone — Toko Disc PS5 &amp; Cartridge Switch</title>
+    <meta
+      name="description"
+      content="Katalog dan pemesanan fisik game original Blu-ray Disc PS5, Cartridge Nintendo Switch 1, dan Cartridge Nintendo Switch 2 melalui WhatsApp."
+    />
+    <meta property="og:title" content="Psyger Zone — Toko Disc PS5 &amp; Cartridge Switch" />
+    <meta
+      property="og:description"
+      content="Katalog dan pemesanan fisik game original Blu-ray Disc PS5, Cartridge Nintendo Switch 1, dan Cartridge Nintendo Switch 2 melalui WhatsApp."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body id="beranda">
+    <a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#beranda" class="brand-wordmark">Psyger Zone</a>
+
+        <nav class="primary-nav" aria-label="Navigasi utama">
+          <a href="#katalog" class="nav-link">Katalog</a>
+          <a href="#cara-pesan" class="nav-link">Cara Pesan</a>
+          <a href="#kompatibilitas" class="nav-link">Kompatibilitas</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#kontak" class="nav-link">Kontak</a>
+        </nav>
+
+        <div class="header-action">
+          <a href="#keranjang" id="header-cart-link" class="btn btn-primary btn-header-cart">
+            Keranjang (0 unit)
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <noscript>
+      <div class="noscript-banner" role="alert">
+        <div class="container">
+          <strong>JavaScript tidak aktif pada browser Anda.</strong> Fitur pencarian katalog,
+          perhitungan keranjang, dan penyusunan draf pesan WhatsApp membutuhkan JavaScript. Anda
+          tetap dapat membaca panduan kompatibilitas media fisik, ketentuan pembelian, serta jam
+          operasional toko di halaman ini.
+        </div>
+      </div>
+    </noscript>
+
+    <main id="konten-utama">
+      <section class="hero-section" aria-labelledby="hero-heading">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="section-kicker">Media Fisik Konsol Original · Segel Resmi &amp; Seken Pilihan</p>
+            <h1 id="hero-heading" class="hero-title">
+              Koleksi Disc PS5, Cartridge Switch 1 &amp; Switch 2 tanpa ribet tanya harga satu per satu.
+            </h1>
+            <p class="hero-lead">
+              Bandingkan judul, kode region, kondisi kotak, serta kompatibilitas konsol secara
+              transparan. Susun daftar pesanan Anda, lihat estimasi biaya secara instan, lalu
+              teruskan ke WhatsApp toko untuk konfirmasi stok manual.
+            </p>
+            <div class="hero-actions">
+              <a href="#katalog" class="btn btn-primary">Lihat Katalog Fisik</a>
+              <a href="#kompatibilitas" class="text-action-link">Cek Panduan Kompatibilitas</a>
+            </div>
+            <p class="hero-meta-line">
+              Ambil langsung di toko dengan janji jadwal · Pengiriman kurir berlapis pelindung · Tanpa perlu membuat akun
+            </p>
+          </div>
+
+          <div class="hero-visual">
+            <img
+              src="./assets/images/hero-physical-games.svg"
+              alt="Ilustrasi berdampingan kotak Blu-ray Disc PlayStation 5, Cartridge Nintendo Switch 1, dan Cartridge merah Nintendo Switch 2"
+              width="720"
+              height="540"
+              decoding="async"
+              referrerpolicy="no-referrer"
+              class="hero-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="katalog" class="workspace-section" aria-labelledby="katalog-heading">
+        <div class="container workspace-grid">
+          <div class="catalog-column">
+            <div class="section-header-row">
+              <div>
+                <h2 id="katalog-heading" class="section-title">Katalog Game Fisik</h2>
+                <p class="section-subtitle">
+                  Harga tertera dalam Rupiah per unit fisik. Ketersediaan stok aktual dikonfirmasi
+                  admin sebelum pembayaran.
+                </p>
+              </div>
+              <a href="#keranjang" id="mobile-cart-jump" class="btn btn-secondary mobile-only-jump">
+                Lihat Keranjang (0 unit)
+              </a>
+            </div>
+
+            <div class="catalog-toolbar" role="search" aria-label="Pencarian dan penyaringan katalog">
+              <div class="search-field-group">
+                <label for="catalog-search" class="field-label">
+                  Cari judul game, genre, atau region
+                </label>
+                <div class="search-input-wrap">
+                  <input
+                    type="search"
+                    id="catalog-search"
+                    class="form-input search-input"
+                    placeholder="Contoh: Zelda, Mario Kart, RPG, Reg 3..."
+                    autocomplete="off"
+                  />
+                  <button
+                    type="button"
+                    id="clear-search-btn"
+                    class="clear-search-btn"
+                    hidden
+                    aria-label="Bersihkan kata pencarian"
+                  >
+                    Bersihkan
+                  </button>
+                </div>
+              </div>
+
+              <div class="filter-controls-row">
+                <div class="platform-filter-group">
+                  <span class="field-label" id="platform-filter-label">Platform Media</span>
+                  <div
+                    id="category-tabs"
+                    class="segmented-tabs"
+                    role="group"
+                    aria-labelledby="platform-filter-label"
+                  ></div>
+                </div>
+
+                <div class="condition-filter-group">
+                  <label for="condition-filter" class="field-label">Kondisi Fisik</label>
+                  <select id="condition-filter" class="form-select">
+                    <option value="all">Semua Kondisi</option>
+                  </select>
+                </div>
+              </div>
+
+              <p id="catalog-result-count" class="catalog-count" aria-live="polite">
+                Memuat katalog produk...
+              </p>
+            </div>
+
+            <div id="catalog-empty" class="empty-state-box" hidden>
+              <p class="empty-state-title">Judul game tidak ditemukan.</p>
+              <p class="empty-state-desc">
+                Coba gunakan kata kunci lain atau kembalikan filter platform dan kondisi ke awal.
+              </p>
+              <button type="button" id="reset-filter-btn" class="btn btn-secondary">
+                Reset Filter &amp; Pencarian
+              </button>
+            </div>
+
+            <div id="catalog-grid" class="product-grid"></div>
+          </div>
+
+          <aside id="keranjang" class="cart-column" aria-labelledby="cart-heading">
+            <div class="cart-panel">
+              <div class="cart-panel-header">
+                <h2 id="cart-heading" class="cart-panel-title">Keranjang Pesanan</h2>
+                <span id="cart-total-units" class="cart-unit-summary tabular-nums">0 unit</span>
+              </div>
+
+              <p
+                id="cart-live-status"
+                class="visually-hidden"
+                role="status"
+                aria-live="polite"
+              ></p>
+
+              <p id="storage-warning" class="inline-notice" role="status" hidden></p>
+
+              <div id="cart-empty-message" class="cart-empty-box">
+                Belum ada kaset atau disc di keranjang. Pilih judul dari katalog untuk memulai.
+              </div>
+
+              <ul id="cart-items-list" class="cart-items-list" hidden></ul>
+              <p id="error-cart" class="field-error" role="alert" hidden></p>
+
+              <form id="checkout-form" class="checkout-form" novalidate>
+                <fieldset class="fulfillment-fieldset">
+                  <legend class="field-label">Metode Penerimaan Barang</legend>
+                  <div class="radio-choice-grid">
+                    <label class="radio-card" for="fulfillment-pickup">
+                      <input
+                        type="radio"
+                        id="fulfillment-pickup"
+                        name="fulfillmentMethod"
+                        value="pickup"
+                        checked
+                      />
+                      <span>Ambil di Toko</span>
+                    </label>
+                    <label class="radio-card" for="fulfillment-courier">
+                      <input
+                        type="radio"
+                        id="fulfillment-courier"
+                        name="fulfillmentMethod"
+                        value="courier"
+                      />
+                      <span>Kirim Kurir</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div id="pickup-date-group" class="form-group">
+                  <label for="pickup-date" class="field-label">
+                    Tanggal Rencana Pengambilan
+                  </label>
+                  <input
+                    type="date"
+                    id="pickup-date"
+                    name="pickupDate"
+                    class="form-input"
+                    aria-describedby="pickup-date-hint error-pickupDate"
+                  />
+                  <p id="pickup-date-hint" class="field-hint">
+                    Pilih hari ini atau maksimal 30 hari ke depan pada jam operasional toko.
+                  </p>
+                  <p id="error-pickupDate" class="field-error" hidden></p>
+                </div>
+
+                <div id="courier-city-group" class="form-group" hidden>
+                  <label for="destination-city" class="field-label">
+                    Kota &amp; Kecamatan Tujuan
+                  </label>
+                  <input
+                    type="text"
+                    id="destination-city"
+                    name="destinationCity"
+                    class="form-input"
+                    maxlength="100"
+                    placeholder="Contoh: Bandung Wetan, Kota Bandung"
+                    aria-describedby="destination-city-hint error-destinationCity"
+                  />
+                  <p id="destination-city-hint" class="field-hint">
+                    Digunakan admin untuk menghitung ongkos kirim ekspedisi atau kurir instan.
+                  </p>
+                  <p id="error-destinationCity" class="field-error" hidden></p>
+                </div>
+
+                <div class="summary-total-box">
+                  <div class="summary-total-row">
+                    <span>Estimasi Harga Barang</span>
+                    <strong id="estimated-total-value" class="summary-total-price tabular-nums">
+                      Rp0
+                    </strong>
+                  </div>
+                  <p id="fulfillment-cost-note" class="summary-disclaimer">
+                    Ambil di toko tidak dikenakan biaya pengiriman. Konfirmasi jadwal ambil melalui
+                    WhatsApp sebelum datang.
+                  </p>
+                </div>
+
+                <div class="contact-fields-divider">
+                  <h3 class="subsection-heading">Data Kontak Pemesan</h3>
+                  <p class="field-hint">
+                    Nama dan nomor WhatsApp hanya dipakai menyusun pesan dan tidak disimpan di
+                    penyimpanan browser.
+                  </p>
+                </div>
+
+                <div class="form-group">
+                  <label for="customer-name" class="field-label">Nama Pembeli</label>
+                  <input
+                    type="text"
+                    id="customer-name"
+                    name="customerName"
+                    class="form-input"
+                    autocomplete="name"
+                    maxlength="80"
+                    placeholder="Contoh: Raka Pratama"
+                    aria-describedby="error-customerName"
+                  />
+                  <p id="error-customerName" class="field-error" hidden></p>
+                </div>
+
+                <div class="form-group">
+                  <label for="customer-phone" class="field-label">Nomor WhatsApp Aktif</label>
+                  <input
+                    type="tel"
+                    id="customer-phone"
+                    name="customerPhone"
+                    class="form-input"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    placeholder="Contoh: 0812-3456-7890 atau +6281234567890"
+                    aria-describedby="phone-hint error-customerPhone"
+                  />
+                  <p id="phone-hint" class="field-hint">
+                    Menerima awalan 08 atau 62 (8–15 digit angka).
+                  </p>
+                  <p id="error-customerPhone" class="field-error" hidden></p>
+                </div>
+
+                <div class="form-group">
+                  <label for="customer-notes" class="field-label">
+                    Catatan Tambahan (Opsional)
+                  </label>
+                  <textarea
+                    id="customer-notes"
+                    name="notes"
+                    rows="2"
+                    maxlength="160"
+                    class="form-textarea"
+                    placeholder="Contoh: Mohon foto segel kotak atau cek kode voucher DLC"
+                    aria-describedby="error-notes"
+                  ></textarea>
+                  <p id="error-notes" class="field-error" hidden></p>
+                </div>
+
+                <button type="submit" id="review-order-btn" class="btn btn-primary btn-block">
+                  Periksa Pesanan
+                </button>
+              </form>
+
+              <p id="review-invalidated-notice" class="inline-notice" hidden></p>
+
+              <section
+                id="order-review-panel"
+                class="review-panel"
+                aria-labelledby="review-heading"
+                hidden
+              >
+                <h3 id="review-heading" class="subsection-heading">
+                  Ringkasan Pemeriksaan Pesanan
+                </h3>
+                <dl id="review-meta-list" class="review-meta-list"></dl>
+
+                <div class="review-items-block">
+                  <p class="review-block-label">Daftar Fisik Game</p>
+                  <ul id="review-items-list" class="review-items-list"></ul>
+                  <div class="review-total-line">
+                    <span>Total Estimasi Barang</span>
+                    <strong id="review-total-text" class="tabular-nums">Rp0</strong>
+                  </div>
+                </div>
+
+                <div class="review-draft-block">
+                  <p class="review-block-label">Pratinjau Draf Pesan WhatsApp</p>
+                  <pre id="review-draft-preview" class="review-draft-pre"></pre>
+                </div>
+
+                <p class="whatsapp-privacy-note">
+                  Nama, nomor kontak, dan rincian pesanan akan dimuat ke tautan WhatsApp. Anda harus
+                  menekan tombol kirim sendiri di aplikasi WhatsApp untuk meminta konfirmasi stok.
+                  Estimasi ini belum mengikat reservasi sebelum dikonfirmasi admin.
+                </p>
+
+                <p id="whatsapp-disabled-msg" class="inline-notice" hidden></p>
+
+                <div class="review-actions">
+                  <a
+                    id="whatsapp-submit-link"
+                    class="btn btn-whatsapp btn-block"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ajukan Pesanan via WhatsApp
+                  </a>
+                  <div class="review-secondary-actions">
+                    <button type="button" id="copy-draft-btn" class="btn btn-secondary">
+                      Salin Draf Pesanan
+                    </button>
+                    <button type="button" id="edit-order-btn" class="btn btn-ghost">
+                      Ubah Pesanan
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="cara-pesan" class="info-section surface-alt" aria-labelledby="cara-pesan-heading">
+        <div class="container">
+          <div class="section-intro">
+            <h2 id="cara-pesan-heading" class="section-title">Alur Pemesanan Fisik Game</h2>
+            <p class="section-subtitle">
+              Dirancang ringkas tanpa pendaftaran akun agar Anda bisa langsung memastikan stok fisik
+              dan kecocokan konsol bersama pengelola toko.
+            </p>
+          </div>
+
+          <ol class="steps-grid">
+            <li class="step-card">
+              <span class="step-index tabular-nums">01. Pilih Judul &amp; Platform</span>
+              <p class="step-text">
+                Gunakan pencarian atau filter untuk memilih Blu-ray Disc PS5, Cartridge Switch 1,
+                atau Cartridge Switch 2 beserta kondisinya.
+              </p>
+            </li>
+            <li class="step-card">
+              <span class="step-index tabular-nums">02. Atur Jumlah &amp; Penerimaan</span>
+              <p class="step-text">
+                Tentukan jumlah unit serta pilih rencana ambil langsung di toko atau pengiriman
+                kurir ke kota dan kecamatan Anda.
+              </p>
+            </li>
+            <li class="step-card">
+              <span class="step-index tabular-nums">03. Periksa Ringkasan Estimasi</span>
+              <p class="step-text">
+                Isi nama dan nomor WhatsApp aktif, lalu periksa rincian judul, region, serta
+                estimasi total harga barang di layar.
+              </p>
+            </li>
+            <li class="step-card">
+              <span class="step-index tabular-nums">04. Kirim &amp; Konfirmasi Manual</span>
+              <p class="step-text">
+                Buka draf pesan di WhatsApp lalu kirimkan. Admin memeriksa stok aktual, foto kondisi
+                kotak/disc, ongkos kirim, dan instruksi pembayaran.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="kompatibilitas" class="info-section" aria-labelledby="compat-heading">
+        <div class="container">
+          <div class="section-intro">
+            <h2 id="compat-heading" class="section-title">
+              Panduan Kompatibilitas Media Fisik Konsol
+            </h2>
+            <p class="section-subtitle">
+              Pastikan keping disc atau cartridge yang Anda pilih sesuai dengan varian perangkat
+              keras konsol di rumah sebelum melakukan pembayaran.
+            </p>
+          </div>
+
+          <div class="table-responsive" role="region" aria-labelledby="compat-heading" tabindex="0">
+            <table class="compat-table">
+              <thead>
+                <tr>
+                  <th scope="col">Jenis Media Fisik</th>
+                  <th scope="col">Konsol yang Didukung</th>
+                  <th scope="col">Tidak Didukung Pada</th>
+                  <th scope="col">Catatan Region &amp; DLC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Blu-ray Disc PS5</th>
+                  <td>PS5 Standar (Fat), PS5 Slim Disc Edition, PS5 Pro + Ultra HD Blu-ray Drive</td>
+                  <td>PS5 Digital Edition tanpa aksesori Disc Drive terpasang, serta konsol PS4</td>
+                  <td>
+                    Disc bersifat Region Free untuk dimainkan, namun klaim voucher DLC/ekspansi
+                    wajib memakai akun PSN dengan region yang sama (misal Reg 3 Asia).
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Cartridge Switch 1</th>
+                  <td>
+                    Nintendo Switch V1/V2, Switch Lite, Switch OLED, serta kompatibel mundur pada
+                    Nintendo Switch 2
+                  </td>
+                  <td>Perangkat di luar ekosistem Nintendo Switch</td>
+                  <td>
+                    Game card bersifat Region Free. Sebagian kecil game memerlukan fitur Joy-Con
+                    terpisah jika dimainkan di Switch Lite.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Cartridge Switch 2</th>
+                  <td>Konsol Nintendo Switch 2 (Generasi Kedua)</td>
+                  <td>
+                    Nintendo Switch 1 Reguler (V1/V2), Switch Lite, dan Switch OLED generasi pertama
+                  </td>
+                  <td>
+                    Menggunakan cartridge merah kecepatan tinggi khusus Switch 2; tidak dapat dibaca
+                    oleh slot konsol Switch generasi pertama meskipun bentuk fisiknya serupa.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="info-section surface-alt" aria-labelledby="faq-heading">
+        <div class="container faq-layout">
+          <div class="section-intro">
+            <h2 id="faq-heading" class="section-title">Ketentuan Pembelian &amp; FAQ</h2>
+            <p class="section-subtitle">
+              Informasi penting seputar pemeriksaan stok, perbedaan kondisi segel baru dan bekas
+              terawat, serta kebijakan transaksi.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary class="faq-question">
+                Apakah menekan tombol WhatsApp langsung mengunci stok pesanan saya?
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Belum. Website ini berfungsi menyusun daftar pesanan dan estimasi harga barang.
+                  Pesanan baru tercatat setelah Anda mengirim pesan di WhatsApp dan pengelola toko
+                  mengonfirmasi ketersediaan stok fisik serta kesepakatan pembayaran secara manual.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">
+                Apa perbedaan kondisi Segel Baru (BNIB) dan Bekas Terawat (CIB)?
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  <strong>Segel Baru (BNIB / Brand New In Box)</strong> adalah produk baru dalam
+                  segel plastik resmi distributor/pabrikan yang belum pernah dibuka.
+                  <strong>Bekas Terawat (CIB / Complete In Box)</strong> adalah unit seken original
+                  lengkap dengan kotak serta sampul asli yang telah diuji baca pada konsol; kode
+                  voucher bonus di dalam unit bekas diasumsikan sudah terpakai kecuali disebutkan
+                  sebaliknya oleh admin.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">
+                Apakah Cartridge Nintendo Switch 2 bisa dimasukkan ke Nintendo Switch 1 atau OLED?
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Tidak bisa. Cartridge khusus Nintendo Switch 2 (kotak dan kartu berwarna merah
+                  penuh) membutuhkan perangkat keras Nintendo Switch 2. Sebaliknya, hampir seluruh
+                  Cartridge Nintendo Switch 1 tetap dapat dimainkan pada konsol Nintendo Switch 2.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">
+                Bagaimana perhitungan ongkos kirim dan standar pengemasan paket?
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Total di halaman ini hanya menghitung harga fisik game. Jika Anda memilih metode
+                  Kirim Kurir, admin akan mengecek tarif ekspedisi reguler atau kurir instan ke
+                  kecamatan Anda. Setiap pengiriman dikemas memakai bubble wrap tebal dan kardus
+                  pelindung agar kotak kaset tidak retak selama perjalanan.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">
+                Bagaimana ketentuan garansi atau komplain barang saat diterima?
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Pembeli wajib merekam video pembukaan paket (unboxing) utuh tanpa jeda sejak resi
+                  terlihat hingga keping disc atau cartridge diperiksa. Untuk produk Segel Baru
+                  (BNIB) yang segelnya sudah dibuka pembeli, pengembalian karena salah pilih
+                  platform konsol (misal PS5 Digital tanpa disc drive) tidak dapat diterima.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="kontak" class="site-footer" aria-labelledby="footer-heading">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h2 id="footer-heading" class="footer-brand">Kasetia Game</h2>
+          <p class="footer-desc">
+            Layanan katalog dan pengajuan pembelian fisik game original PlayStation 5 Blu-ray Disc,
+            Nintendo Switch 1 Game Card, dan Nintendo Switch 2 Game Card.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading-sm">Lokasi &amp; Jam Operasional</h3>
+          <p id="store-address-text" class="footer-text">
+            Jl. Kemang Raya No. 18, Bangka, Mampang Prapatan, Jakarta Selatan
+          </p>
+          <p id="store-address-example-note" class="footer-example-note">
+            Catatan: Alamat di atas adalah data contoh demonstrasi. Perbarui pada konfigurasi toko
+            sebelum peluncuran resmi.
+          </p>
+          <p id="store-hours-text" class="footer-text">
+            Senin–Sabtu, 10.00–20.00 WIB (Minggu &amp; hari libur nasional tutup)
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading-sm">Kebijakan Layanan</h3>
+          <p id="store-pickup-policy" class="footer-text">
+            Pengambilan langsung di toko tersedia setelah admin mengonfirmasi ketersediaan unit
+            melalui WhatsApp.
+          </p>
+          <p id="store-shipping-policy" class="footer-text">
+            Pengiriman luar area menggunakan kardus pelindung dan bubble wrap berlapis; ongkos kirim
+            dihitung manual sesuai kota tujuan.
+          </p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Kasetia Game. Seluruh merek konsol dan judul game merupakan milik pemegang hak cipta masing-masing.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
